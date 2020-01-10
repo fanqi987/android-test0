@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.activity.test">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.activity.test.TestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/second_activity_name"></activity>
+        <activity
+            android:name=".ThirdActivity"
+            android:label="@string/third_activity_name">
+            <intent-filter>
+                <action android:name="com.activity.test.ThirdActivity.ACTION_START"></action>
+
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <category android:name="com.activity.test.ThirdActivity.CATEGORY_START"></category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FourthActivity"
+            android:label="@string/fourth_activity_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+
+                <data android:scheme="http"></data>
+                <data android:host="www.qq.com"></data>
+            </intent-filter>
+        </activity>
+        <activity android:name=".FifthActivity"></activity>
+        <activity android:name=".SixthActivity"></activity>
+        <activity android:name=".fragment.ContentActivity"></activity>
+        <activity android:name=".broadcast.BroadcastTestActivity"></activity>
+
+        <receiver android:name=".broadcast.BroadcastTestReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".broadcast.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.activity.test.broadcast.MY_BROADCAST"></action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

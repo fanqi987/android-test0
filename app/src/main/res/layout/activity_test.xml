@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.activity.test.TestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee666">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="后退" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="标题栏" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/test_button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显式跳转到活动2" />
+
+    <Button
+        android:id="@+id/test_button_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="隐式跳转到活动3" />
+
+    <Button
+        android:id="@+id/test_button_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到网页" />
+
+    <Button
+        android:id="@+id/test_button_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到拨号"></Button>
+
+    <Button
+        android:id="@+id/test_button_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试scheme跳转网页" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/test_button_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到碎片测试"></Button>
+
+    <Button
+        android:id="@+id/test_button_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新闻项目碎片测试"></Button>
+
+    <Button
+        android:id="@+id/test_button_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="动态注册广播"></Button>
+
+    <Button
+        android:id="@+id/test_button_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试自定义广播" />
+
+    <Button
+        android:id="@+id/test_button_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试本地广播"></Button>
+</LinearLayout>
